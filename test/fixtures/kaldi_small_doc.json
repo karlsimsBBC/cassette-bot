@@ -1,0 +1,44 @@
+{
+    "metadata": {
+      "version": "0.0.11"
+    },
+    "text": "oh and a a over",
+    "punct": "Oh. And A A over",
+    "words": [
+      {
+        "start": 13.59,
+        "confidence": 1,
+        "end": 14.13,
+        "word": "oh",
+        "punct": "Oh."
+      },
+      {
+        "start": 14.13,
+        "confidence": 1,
+        "end": 14.64,
+        "word": "and",
+        "punct": "And"
+      },
+      {
+        "start": 14.9,
+        "confidence": 0.99,
+        "end": 15.6,
+        "word": "a",
+        "punct": "A"
+      },
+      {
+        "start": 16.01,
+        "confidence": 0.98,
+        "end": 16.09,
+        "word": "a",
+        "punct": "A"
+      },
+      {
+        "start": 34.38,
+        "confidence": 1,
+        "end": 34.7,
+        "word": "over",
+        "punct": "over"
+      }
+    ]
+}

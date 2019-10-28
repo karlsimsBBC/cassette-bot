@@ -1,0 +1,381 @@
+{
+    "metadata": {
+      "version": "0.0.11"
+    },
+    "text": "oh and a a over the hills and far away teletubbies come to play oh sh oh hi he attended a high end up in high tech company time come coming the we the wing you see oh are you coming we are we are and where the teletubbies gone and he can",
+    "punct": "Oh. And A A over the hills and far away, Teletubbies come to play. Oh, sh. Oh, hi. He attended a high end up in high tech company time. Come coming. The we. The wing. You see. Oh. Are you coming. We are we are. And where the Teletubbies gone and he can.",
+    "words": [
+      {
+        "start": 13.59,
+        "confidence": 1,
+        "end": 14.13,
+        "word": "oh",
+        "punct": "Oh."
+      },
+      {
+        "start": 14.13,
+        "confidence": 1,
+        "end": 14.64,
+        "word": "and",
+        "punct": "And"
+      },
+      {
+        "start": 14.9,
+        "confidence": 0.99,
+        "end": 15.6,
+        "word": "a",
+        "punct": "A"
+      },
+      {
+        "start": 16.01,
+        "confidence": 0.98,
+        "end": 16.09,
+        "word": "a",
+        "punct": "A"
+      },
+      {
+        "start": 34.38,
+        "confidence": 1,
+        "end": 34.7,
+        "word": "over",
+        "punct": "over"
+      },
+      {
+        "start": 34.7,
+        "confidence": 1,
+        "end": 34.79,
+        "word": "the",
+        "punct": "the"
+      },
+      {
+        "start": 34.79,
+        "confidence": 1,
+        "end": 35.31,
+        "word": "hills",
+        "punct": "hills"
+      },
+      {
+        "start": 35.31,
+        "confidence": 1,
+        "end": 35.49,
+        "word": "and",
+        "punct": "and"
+      },
+      {
+        "start": 35.49,
+        "confidence": 1,
+        "end": 35.88,
+        "word": "far",
+        "punct": "far"
+      },
+      {
+        "start": 35.88,
+        "confidence": 1,
+        "end": 36.44,
+        "word": "away",
+        "punct": "away,"
+      },
+      {
+        "start": 39.04,
+        "confidence": 1,
+        "end": 40.16,
+        "word": "teletubbies",
+        "punct": "Teletubbies"
+      },
+      {
+        "start": 40.16,
+        "confidence": 1,
+        "end": 40.53,
+        "word": "come",
+        "punct": "come"
+      },
+      {
+        "start": 40.53,
+        "confidence": 1,
+        "end": 40.65,
+        "word": "to",
+        "punct": "to"
+      },
+      {
+        "start": 40.65,
+        "confidence": 1,
+        "end": 41.1,
+        "word": "play",
+        "punct": "play."
+      },
+      {
+        "start": 53.75,
+        "confidence": 1,
+        "end": 54.65,
+        "word": "oh",
+        "punct": "Oh,"
+      },
+      {
+        "start": 54.68,
+        "confidence": 0.98,
+        "end": 55.17,
+        "word": "sh",
+        "punct": "sh."
+      },
+      {
+        "start": 55.2,
+        "confidence": 1,
+        "end": 55.79,
+        "word": "oh",
+        "punct": "Oh,"
+      },
+      {
+        "start": 56.64,
+        "confidence": 0.99,
+        "end": 57.33,
+        "word": "hi",
+        "punct": "hi."
+      },
+      {
+        "start": 77.31,
+        "confidence": 0.76,
+        "end": 78.45,
+        "word": "he",
+        "punct": "He"
+      },
+      {
+        "start": 78.45,
+        "confidence": 0.62,
+        "end": 79,
+        "word": "attended",
+        "punct": "attended"
+      },
+      {
+        "start": 79,
+        "confidence": 0.96,
+        "end": 79.36,
+        "word": "a",
+        "punct": "a"
+      },
+      {
+        "start": 79.8,
+        "confidence": 0.94,
+        "end": 80.18,
+        "word": "high",
+        "punct": "high"
+      },
+      {
+        "start": 80.36,
+        "confidence": 0.77,
+        "end": 80.66,
+        "word": "end",
+        "punct": "end"
+      },
+      {
+        "start": 80.66,
+        "confidence": 0.57,
+        "end": 80.79,
+        "word": "up",
+        "punct": "up"
+      },
+      {
+        "start": 80.82,
+        "confidence": 0.64,
+        "end": 81.02,
+        "word": "in",
+        "punct": "in"
+      },
+      {
+        "start": 81.45,
+        "confidence": 0.98,
+        "end": 81.82,
+        "word": "high",
+        "punct": "high"
+      },
+      {
+        "start": 82,
+        "confidence": 0.98,
+        "end": 82.27,
+        "word": "tech",
+        "punct": "tech"
+      },
+      {
+        "start": 82.37,
+        "confidence": 0.53,
+        "end": 82.65,
+        "word": "company",
+        "punct": "company"
+      },
+      {
+        "start": 83.11,
+        "confidence": 0.79,
+        "end": 83.5,
+        "word": "time",
+        "punct": "time."
+      },
+      {
+        "start": 83.65,
+        "confidence": 0.38,
+        "end": 83.92,
+        "word": "come",
+        "punct": "Come"
+      },
+      {
+        "start": 83.95,
+        "confidence": 0.6,
+        "end": 84.26,
+        "word": "coming",
+        "punct": "coming."
+      },
+      {
+        "start": 85.19,
+        "confidence": 0.99,
+        "end": 85.5,
+        "word": "the",
+        "punct": "The"
+      },
+      {
+        "start": 85.53,
+        "confidence": 0.99,
+        "end": 86.3,
+        "word": "we",
+        "punct": "we."
+      },
+      {
+        "start": 86.33,
+        "confidence": 0.52,
+        "end": 86.44,
+        "word": "the",
+        "punct": "The"
+      },
+      {
+        "start": 86.45,
+        "confidence": 0.41,
+        "end": 86.84,
+        "word": "wing",
+        "punct": "wing."
+      },
+      {
+        "start": 86.87,
+        "confidence": 0.89,
+        "end": 87.43,
+        "word": "you",
+        "punct": "You"
+      },
+      {
+        "start": 87.47,
+        "confidence": 0.82,
+        "end": 88.16,
+        "word": "see",
+        "punct": "see."
+      },
+      {
+        "start": 89.66,
+        "confidence": 1,
+        "end": 90.08,
+        "word": "oh",
+        "punct": "Oh."
+      },
+      {
+        "start": 91.27,
+        "confidence": 0.93,
+        "end": 91.61,
+        "word": "are",
+        "punct": "Are"
+      },
+      {
+        "start": 92.86,
+        "confidence": 0.98,
+        "end": 93.28,
+        "word": "you",
+        "punct": "you"
+      },
+      {
+        "start": 93.41,
+        "confidence": 0.81,
+        "end": 93.82,
+        "word": "coming",
+        "punct": "coming."
+      },
+      {
+        "start": 109.75,
+        "confidence": 1,
+        "end": 111.05,
+        "word": "we",
+        "punct": "We"
+      },
+      {
+        "start": 111.46,
+        "confidence": 0.67,
+        "end": 111.7,
+        "word": "are",
+        "punct": "are"
+      },
+      {
+        "start": 111.93,
+        "confidence": 0.98,
+        "end": 113.38,
+        "word": "we",
+        "punct": "we"
+      },
+      {
+        "start": 113.47,
+        "confidence": 0.5,
+        "end": 113.51,
+        "word": "are",
+        "punct": "are."
+      },
+      {
+        "start": 135.9,
+        "confidence": 1,
+        "end": 138.01,
+        "word": "and",
+        "punct": "And"
+      },
+      {
+        "start": 138.87,
+        "confidence": 0.89,
+        "end": 139.43,
+        "word": "where",
+        "punct": "where"
+      },
+      {
+        "start": 139.61,
+        "confidence": 0.97,
+        "end": 139.75,
+        "word": "the",
+        "punct": "the"
+      },
+      {
+        "start": 139.83,
+        "confidence": 0.98,
+        "end": 140.52,
+        "word": "teletubbies",
+        "punct": "Teletubbies"
+      },
+      {
+        "start": 140.55,
+        "confidence": 0.99,
+        "end": 141.05,
+        "word": "gone",
+        "punct": "gone"
+      },
+      {
+        "start": 144.19,
+        "confidence": 1,
+        "end": 144.22,
+        "word": "and",
+        "punct": "and"
+      },
+      {
+        "start": 147.01,
+        "confidence": 0.99,
+        "end": 149.04,
+        "word": "he",
+        "punct": "he"
+      },
+      {
+        "start": 149.64,
+        "confidence": 0.47,
+        "end": 151.74,
+        "word": "can",
+        "punct": "can."
+      }
+    ]
+}
+  
