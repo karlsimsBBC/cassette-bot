@@ -26,9 +26,7 @@ class ScriptComposer(object):
 
     def speech_script(self, transcript, text):
         composer = Speech(transcript)
-        try:
-            assert text
-        except AssertionError:
+        if not text:
             raise InputError(f'Cannot generate speech with empty input text')
         return composer.find(text)
     
