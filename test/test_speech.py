@@ -17,7 +17,7 @@ class TestSpeech(unittest.TestCase):
 
     def test_find_single_phrase(self):
         composer = Speech(self.document)
-        actual = composer.find('over the hills and far away')
+        actual = composer.compose('over the hills and far away')
         expected = {
             'text': 'over the hills and far away',
             'phrases': [
@@ -28,7 +28,7 @@ class TestSpeech(unittest.TestCase):
 
     def test_find_with_missing_word(self):
         composer = Speech(self.document)
-        actual = composer.find('over the cliffs and far away')
+        actual = composer.compose('over the cliffs and far away')
         expected = {
             'text': 'over the [cliffs] and far away',
             'phrases': [
@@ -41,7 +41,7 @@ class TestSpeech(unittest.TestCase):
 
     def test_find_single(self):
         composer = Speech(self.document)
-        actual = composer.find('away')
+        actual = composer.compose('away')
         expected = {
             'text': 'away',
             'phrases': [
@@ -52,7 +52,7 @@ class TestSpeech(unittest.TestCase):
 
     def test_find_empty_str(self):
         composer = Speech(self.document)
-        actual = composer.find('')
+        actual = composer.compose('')
         expected = {'text': '', 'phrases': []}
         self.assertEqual(actual, expected)
 

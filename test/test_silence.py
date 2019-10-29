@@ -9,9 +9,9 @@ class TestSilence(unittest.TestCase):
     document = load_fixture('kaldi_small_doc.json')
     empty_document = load_fixture('kaldi_empty_doc.json') 
 
-    def test_find(self):
+    def test_compose(self):
         composer = Silence(self.document)
-        actual = composer.find()
+        actual = composer.compose()
         expected = {
             'text': 'Silence...',
             'phrases': [
@@ -27,5 +27,5 @@ class TestSilence(unittest.TestCase):
             'text': 'Silence...',
             'phrases': []
         }
-        actual = composer.find()
+        actual = composer.compose()
         self.assertEqual(actual, expected)

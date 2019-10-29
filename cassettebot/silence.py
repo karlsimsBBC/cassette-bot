@@ -6,6 +6,9 @@ class Silence(object):
         self.transcript = transcript
         self.minlen = minlen
         self.inset = inset
+
+    def compose(self) -> dict:
+        return dict(text='Silence...', phrases=self.find())
     
     def find(self) -> list:
         last = 0.0
@@ -14,7 +17,7 @@ class Silence(object):
             if self.has_pause(last, word['start']):
                 instances.append(self.instance(last, word['start']))
             last = word['end']
-        return dict(text='Silence...', phrases=instances)
+        return instances
 
     def has_pause(self, a: float, b: float) -> bool: 
         return abs(a - b) >= self.minlen
