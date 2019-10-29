@@ -40,9 +40,3 @@ class VideoBuilder(object):
 
 
 cat = ''.join
-
-
-
-
-
-
