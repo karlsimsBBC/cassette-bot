@@ -10,7 +10,7 @@ def main():
     composer = ScriptComposer()
     try:
         new_transcript = composer.compose(args.product, args.transcript, args.input_text)
-        if args.verbose and composer.inspect(new_transcript) != 'y':
+        if args.verbose and composer.inspect(new_transcript):
             return
         builder.build(new_transcript, args.video_source, args.video_output)
     except InputError as e:
