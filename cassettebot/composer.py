@@ -38,4 +38,4 @@ class ScriptComposer(object):
         print('-' * 70)
         print('\n  '.join(['Generated script:\n'] + textwrap.wrap(text)), end='\n\n')
         print('skipped:', ' '.join(skipped_words))
-        return input('continue ? [Y/n]: ') == 'y'
+        return input('continue ? [Y/n]: ') != 'y'

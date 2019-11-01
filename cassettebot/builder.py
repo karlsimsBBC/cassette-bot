@@ -20,8 +20,10 @@ class VideoBuilder(object):
     def compile_timecodes(self, phrases: list) -> str:
         if len(phrases) == 0:
             raise InputError('Empty phrase list, cannot compile timecodes')
-        components = list(self.compile_slices(phrases))
-        components.extend(self.compile_concatination(phrases))
+        components = [
+            *self.compile_slices(phrases),
+            *self.compile_concatination(phrases)
+        ]
         return cat(components)
 
     def compile_slices(self, phrases: list) -> iter:
@@ -36,7 +38,9 @@ class VideoBuilder(object):
         concat_info = 'concat=n={total}:v=1:a=1[out]'
         total = len(phrases)
         orderings = [meta_clip.format(index=i) for i in range(total)]
-        return orderings + [concat_info.format(total=total)]
+        for i in range(total):
+            yield meta_clip.format(index=i)
+        yield concat_info.format(total=total)
 
 
 cat = ''.join

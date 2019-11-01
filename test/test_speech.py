@@ -30,7 +30,7 @@ class TestSpeech(unittest.TestCase):
         composer = Speech(self.document)
         actual = composer.compose('over the cliffs and far away')
         expected = {
-            'text': 'over the [cliffs] and far away',
+            'text': 'over the | [cliffs] | and far away',
             'phrases': [
                 {'text': 'over the','start': 34.38,'end': 34.79},
                 {'text': '[cliffs]', 'start': 13.59, 'end': 14.13},

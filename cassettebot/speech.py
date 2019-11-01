@@ -13,7 +13,7 @@ class Speech(object):
 
     def compose(self, text: str) -> dict:
         phrases = self.find(text)
-        return dict(phrases=phrases, text=cat(p['text'] for p in phrases))
+        return dict(phrases=phrases, text=' | '.join(p['text'] for p in phrases))
     
     def find(self, text: str) -> list:
         return [self.merge(words) for words in self.find_phrases(text)]
