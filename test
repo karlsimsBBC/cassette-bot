@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# unit tests
+python3 -m unittest
+
+# check if we can build our examples
+./build_examples
+
+if [ $? -eq 0 ]; then
+    echo 'OK TESTS PASS'
+else
+    echo 'TESTS FAIL'
+fi

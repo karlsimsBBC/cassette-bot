@@ -6,6 +6,7 @@ from cassettebot.exceptions import InputError
 class VideoBuilder(object):
 
     def build(self, transcript: dict, video_source: str, video_output: str):
+        'build video from generated transcript'
         phrases = transcript['phrases']
         timecodes = self.compile_timecodes(phrases)
         options = [
@@ -18,6 +19,7 @@ class VideoBuilder(object):
         subprocess.call(options)
 
     def compile_timecodes(self, phrases: list) -> str:
+        'compile phrases to ffmpeg slice and concat instructions'
         if len(phrases) == 0:
             raise InputError('Empty phrase list, cannot compile timecodes')
         components = [
@@ -27,6 +29,7 @@ class VideoBuilder(object):
         return cat(components)
 
     def compile_slices(self, phrases: list) -> iter:
+        'compiles ffmpeg slice instructions'
         video_clip = '[0:v]trim={start}:{end},setpts=PTS-STARTPTS[v{index}];'
         audio_clip = '[0:a]atrim={start}:{end},asetpts=PTS-STARTPTS[a{index}];'
         for i, phrase in enumerate(phrases):
@@ -34,6 +37,7 @@ class VideoBuilder(object):
             yield audio_clip.format(index=i, **phrase)
 
     def compile_concatination(self, phrases: list) -> list:
+        'compiles ffmpeg concat instructions'
         meta_clip = '[v{index}][a{index}]'
         concat_info = 'concat=n={total}:v=1:a=1[out]'
         total = len(phrases)

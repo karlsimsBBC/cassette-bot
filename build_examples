@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -eu
+
+python3 -m cassettebot speech \
+    examples/mark/video.mp4 \
+    examples/mark/transcription.json \
+    --input_text='i wanna talk about this specific situation when i was in college and I started facebook' \
+    --video_output='examples/mark/results/speech.mp4' \
+    --verbose
+
+python3 -m cassettebot silence \
+    examples/mark/video.mp4 \
+    examples/mark/transcription.json \
+    --video_output='examples/mark/results/silence.mp4'

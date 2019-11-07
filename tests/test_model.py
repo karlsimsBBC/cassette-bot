@@ -1,7 +1,7 @@
 import unittest
 
 from cassettebot.model import Model
-from test.utils import load_fixture
+from tests.utils import load_fixture
 
 
 class TestModel(unittest.TestCase):

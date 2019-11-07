@@ -4,7 +4,6 @@ def parse_args():
     parser = argparse.ArgumentParser('Cassette Bot')
     parser.add_argument(
         'product',
-        metavar='PRODUCT',
         type=str,
         choices=('speech', 'silence', 'markov'),
         help='type of product: \n\t{\'speech\', \'silence\', \'markov\'}')
@@ -14,7 +13,7 @@ def parse_args():
         help='path of video to process')
     parser.add_argument(
         'transcript',
-        type=str,
+        type=open,
         help='path of timecoded json transcript')
     parser.add_argument(
         '--input_text',
@@ -30,5 +29,6 @@ def parse_args():
     parser.add_argument(
         '--verbose', '-v',
         action='store_true',
+        help='check created transcript before building video',
         default=False)
     return parser.parse_args()

@@ -1,7 +1,7 @@
 import unittest
 
 from cassettebot.silence import Silence
-from test.utils import load_fixture
+from tests.utils import load_fixture
 
 
 class TestSilence(unittest.TestCase):

@@ -2,7 +2,7 @@ import unittest
 
 from cassettebot.speech import Speech
 from cassettebot.exceptions import InputError
-from test.utils import load_fixture
+from tests.utils import load_fixture
 
 
 class TestSpeech(unittest.TestCase):
