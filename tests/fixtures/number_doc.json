@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "version": "0.0.11"
+    },
+    "text": "more than seventy million businesses",
+    "punct": "more than seventy million businesses",
+    "words": [
+        {
+            "start": 34.38,
+            "confidence": 1,
+            "end": 34.7,
+            "word": "more",
+            "punct": "more"
+          },
+          {
+            "start": 34.7,
+            "confidence": 1,
+            "end": 34.79,
+            "word": "than",
+            "punct": "than"
+          },
+          {
+            "start": 34.79,
+            "confidence": 1,
+            "end": 35.31,
+            "word": "seventy",
+            "punct": "seventy"
+          },
+          {
+            "start": 35.31,
+            "confidence": 1,
+            "end": 35.49,
+            "word": "million",
+            "punct": "million"
+          },
+          {
+            "start": 35.49,
+            "confidence": 1,
+            "end": 35.88,
+            "word": "businesses",
+            "punct": "businesses"
+          }
+    ]
+}

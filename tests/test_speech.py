@@ -7,8 +7,11 @@ from tests.utils import load_fixture
 
 class TestSpeech(unittest.TestCase):
 
+    maxDiff = None
+
     document = load_fixture('kaldi_doc.json')
     empty_document = load_fixture('kaldi_empty_doc.json') 
+    number_document = load_fixture('number_doc.json')
 
     def test__init__empty_dataset(self):
         with self.assertRaises(InputError) as context:
@@ -46,6 +49,52 @@ class TestSpeech(unittest.TestCase):
             'text': 'away',
             'phrases': [
                 {'text': 'away', 'start': 35.88, 'end': 36.44}
+            ]
+        }
+        self.assertEqual(actual, expected)
+
+    def test_find_with_wildcards(self):
+        composer = Speech(self.document)
+        composer = Speech(self.document)
+        actual = composer.compose('over * hills * * away')
+        expected = {
+            'text': 'over the hills and far away',
+            'phrases': [
+                {'text': 'over the hills and far away', 'start': 34.38, 'end': 36.44}
+            ]
+        }
+        self.assertEqual(actual, expected)
+
+    def test_find_with_wildcard_at_start(self):
+        composer = Speech(self.document)
+        actual = composer.compose('* the hills * far away')
+        expected = {
+            'text': 'over the hills and far away',
+            'phrases': [
+                {'text': 'over the hills and far away', 'start': 34.38, 'end': 36.44}
+            ]
+        }
+        self.assertEqual(actual, expected)
+
+    def test_find_with_gaps(self):
+        composer = Speech(self.document)
+        actual = composer.compose('oh and a a over the hills and far away')
+        expected = {
+            'text': 'oh and a a | over the hills and far away',
+            'phrases': [
+                {'text': 'oh and a a', 'start': 13.59, 'end': 16.09},
+                {'text': 'over the hills and far away', 'start': 34.38, 'end': 36.44}
+            ]
+        }
+        self.assertEqual(actual, expected)
+
+    def test_find_with_number_match(self):
+        composer = Speech(self.number_document)
+        actual = composer.compose('more than %d businesses')
+        expected = {
+            'text': 'more than seventy million businesses',
+            'phrases': [
+                {'text': 'more than seventy million businesses', 'start': 34.38, 'end': 35.49}
             ]
         }
         self.assertEqual(actual, expected)
