@@ -1,6 +1,6 @@
 import unittest
 
-from cassettebot.silence import Silence
+from cassettebot.composer import Silence
 from tests.utils import load_fixture
 
 

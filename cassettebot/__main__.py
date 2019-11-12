@@ -1,7 +1,8 @@
-from cassettebot.builder import VideoBuilder
 from cassettebot.composer import ScriptComposer
+from cassettebot.builder import VideoBuilder
 from cassettebot.exceptions import InputError
 from cassettebot.argparser import parse_args
+
 
 def main():
     args = parse_args()

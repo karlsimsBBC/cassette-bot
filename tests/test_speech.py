@@ -1,6 +1,6 @@
 import unittest
 
-from cassettebot.speech import Speech
+from cassettebot.composer import Speech
 from cassettebot.exceptions import InputError
 from tests.utils import load_fixture
 

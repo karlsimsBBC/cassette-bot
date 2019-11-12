@@ -1,4 +1,4 @@
-from cassettebot.model import Model
+from cassettebot.composer.model import Model
 from cassettebot.exceptions import InputError
 
 class Speech(object):

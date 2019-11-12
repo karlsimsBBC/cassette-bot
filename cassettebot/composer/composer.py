@@ -1,10 +1,10 @@
 import json
 import textwrap
 
-from cassettebot.model import Model
-from cassettebot.silence import Silence
-from cassettebot.speech import Speech
-from cassettebot.markov import Markov
+from cassettebot.composer.model import Model
+from cassettebot.composer.silence import Silence
+from cassettebot.composer.speech import Speech
+from cassettebot.composer.markov import Markov
 from cassettebot.exceptions import InputError
 
 

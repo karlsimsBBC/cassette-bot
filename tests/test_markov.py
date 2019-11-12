@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from cassettebot.markov import Markov
+from cassettebot.composer import Markov
 from tests.utils import load_document
 
 random.seed(0)

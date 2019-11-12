@@ -1,6 +1,6 @@
 import unittest
 
-from cassettebot.model import Model
+from cassettebot.composer import Model
 from tests.utils import load_fixture
 
 
