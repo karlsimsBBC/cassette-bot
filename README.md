@@ -65,3 +65,9 @@ optional arguments:
 ```
 
 🤖 📼 **Pull requests welcome**
+
+
+## Research notes
+* https://github.com/antiboredom/videogrep
+* https://www.clips.uantwerpen.be/pages/pattern-search
+* https://github.com/bbc/kaldiboy — saw after making this.
